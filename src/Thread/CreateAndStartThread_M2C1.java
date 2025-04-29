@@ -18,7 +18,7 @@ class SMIFileRunnable implements Runnable {
 
 }
 
-public class CreateAndThread_M2C1 {
+public class CreateAndStartThread_M2C1 {
     public static void main(String[] args) {
         Runnable smiFileRunnable = new SMIFileRunnable();
 
