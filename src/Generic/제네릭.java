@@ -90,6 +90,20 @@ public class 제네릭 {
             System.out.println(c);
         }
 
+    -메서드 매개변수일 때 제네릭 클래스의 타입 제한
+    ex)
+    1. 리턴 타입 메서드명(제네릭 클래스명<제네릭 타입명> 참조 변수명) {}
+
+    2. 리턴 타입 메서드명(제네릭 클래스명<?> 참조 변수명 {}
+
+    3. 리턴 타입 메서드명(제네릭 클래스명<? extends 상위 클래스/인터페이스> 참조 변수명) {}
+
+    4. 리턴 타입 메서드명(제네릭 클래스명<? super 하위 클래스/인터페이스> 참조 변수명) {}
+
+    1. method(Goods<A> v)
+    2. method(Goods<?> v)
+    3. method(Goods<? extends B> v)
+    4. method(Goods<? super B> v)
 
 
 
