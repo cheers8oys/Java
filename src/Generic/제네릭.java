@@ -76,6 +76,21 @@ public class 제네릭 {
     여기서 extends는 상속의 의미가 아니라 '최상위 클래스 / 인터페이스로 지정한다'의 의미
     따라서 뒤에 나오는 요소가 클래스이든 인터페이스이든 상관없이 무조건 extends 사용
 
+    - 제네릭 메서드의 타입 제한 문법 구조
+    ex)
+    접근 지정자 <T extends 최상위 클래스 / 인터페이스명> T 메서드명(T t) {}
+
+    class GenericMethods {
+        public <T> void method1(T t) {
+            char c = t.charAt(0); (x) Object 메서드만 사용 가능
+           }
+
+        public <T extends String> void method2(T t) {
+            char c = t.charAt(0); (o) String 메서드 사용 가능
+            System.out.println(c);
+        }
+
+
 
 
      */
